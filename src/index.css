@@ -1,20 +1,23 @@
-/* ========== Variáveis ========== */
+/*  VARIÁVEIS  */
 
 :root {
+
   /* Cores */
-  --cor-primaria: #1646a8;          /* azul-marinho: botões, títulos */
-  --cor-primaria-hover: #131f38;    /* um tom mais escuro para hover */
-  --cor-primaria-suave: #e8ecf5;    /* azul bem claro: fundos de destaque */
-  --cor-fundo: #f6f4ef;             /* off-white quente: fundo da página */
-  --cor-superficie: #ffffff;        /* cards e inputs */
+
+  --cor-primaria: #1646a8;          
+  --cor-primaria-hover: #0f3480;   
+  --cor-primaria-suave: #e8ecf5;    
+  --cor-fundo: #f6f4ef;             
+  --cor-superficie: #ffffff;        /* [ Cards e inputs ] */
   --cor-texto: #1c2540;
-  --cor-texto-suave: #5b6478;       /* legendas, placeholders */
+  --cor-texto-suave: #5b6478;       /* [ legendas, placeholders ] */
   --cor-borda: #d9dde6;
-  --cor-foco: #4a6fd1;              /* anel de foco visível */
+  --cor-foco: #4a6fd1;              /* [ Anel de foco visível ] */
   --cor-erro: #b3261e;
   --cor-sucesso: #1e7a4d;
 
   /* Fontes */
+
   --fonte-titulo: "Lora", Georgia, serif;
   --fonte-texto: "Inter", system-ui, -apple-system, sans-serif;
 
@@ -27,18 +30,22 @@
   --espaco-6: 3rem;
 
   /* Atalhos de Forma */
+
   --raio: 0.75rem;
   --raio-pequeno: 0.5rem;
-  --sombra-card: 0 8px 30px rgba(27, 42, 73, 0.08);
+  --sombra-card: 0 8px 30px rgba(22, 70, 168, 0.08);
 
   /* Movimento */
+  
   --transicao: 0.2s ease;
 }
 
-/* ========== Reset ========== */
+/*  Reset  */
 *,
 *::before,
+
 *::after {
+
   box-sizing: border-box;
 }
 
@@ -87,10 +94,9 @@ a {
   color: var(--cor-primaria);
 }
 
-/* ========== Base ========== */
-h1,
-h2,
-h3 {
+/*  Predefinição para t´itulos e subtítulos*/
+
+h1, h2, h3 {
   font-family: var(--fonte-titulo);
   font-weight: 600;
   line-height: 1.25;
@@ -103,7 +109,8 @@ h3 {
   outline-offset: 2px;
 }
 
-/* Respeita quem prefere menos animação */
+/* Redução de animação (Para celulares mais lentos ou preferência minimalista) */
+
 @media (prefers-reduced-motion: reduce) {
   * {
     transition: none !important;
