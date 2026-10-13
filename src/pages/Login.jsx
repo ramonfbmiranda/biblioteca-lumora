@@ -1,8 +1,18 @@
 import Input from "../components/Input";
 import Button from "../components/Button";
+import { useState } from "react";
 import "./Login.css";
 
 function Login() {
+  const [dados, setDados] = useState({
+  email: "",
+  senha: "",
+});
+
+function handleChange(e) {
+  const { name, value } = e.target;
+  setDados({ ...dados, [name]: value });
+}
   return (
     <main className="login">
       <section className="login__card">
@@ -14,6 +24,8 @@ function Login() {
             label="E-mail"
             type="email"
             name="email"
+            value={dados.email}
+            onChange={handleChange}
             placeholder="voce@exemplo.com"
             autoComplete="email"
           />
@@ -22,12 +34,15 @@ function Login() {
             label="Senha"
             type="password"
             name="senha"
+            value={dados.senha}
+            onChange={handleChange}
             placeholder="Sua senha"
             autoComplete="current-password"
           />
 
           <Button type="submit">Entrar</Button>
         </form>
+
 
         <p className="login__rodape">
           Ainda não tem conta? <a href="/cadastro">Crie agora!</a>
