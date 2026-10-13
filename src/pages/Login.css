@@ -1,4 +1,4 @@
-/* Centralizador do Card*/
+/* Centralizador de Card */
 
 .login {
   min-height: 100vh;
@@ -8,7 +8,7 @@
   padding: var(--espaco-3);
 }
 
-/* Card Geral */
+/* Card */
 
 .login__card {
   width: 100%;
@@ -33,66 +33,14 @@
 }
 
 /* Formulário */
+
 .login__form {
   display: flex;
   flex-direction: column;
   gap: var(--espaco-4);
 }
 
-.login__campo {
-  display: flex;
-  flex-direction: column;
-  gap: var(--espaco-2);
-}
-
-.login__campo label {
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-.login__campo input {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
-  background-color: var(--cor-superficie);
-  border: 1px solid var(--cor-borda);
-  border-radius: var(--raio-pequeno);
-  transition: border-color var(--transicao), box-shadow var(--transicao);
-}
-
-.login__campo input::placeholder {
-  color: var(--cor-texto-suave);
-  opacity: 0.8;
-}
-
-.login__campo input:focus-visible {
-  border-color: var(--cor-foco);
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--cor-foco) 25%, transparent);
-  outline: 2px solid transparent;
-}
-
-/* Botão */
-
-.login__botao {
-  width: 100%;
-  padding: 0.85rem 1rem;
-  font-weight: 600;
-  color: #ffffff;
-  background-color: var(--cor-primaria);
-  border: none;
-  border-radius: var(--raio-pequeno);
-  transition: background-color var(--transicao), transform var(--transicao);
-}
-
-.login__botao:hover {
-  background-color: var(--cor-primaria-hover);
-}
-
-.login__botao:active {
-  transform: translateY(1px);
-}
-
-/* Footer/Rodapé do Card */
+/* Rodapé / Footer do card */
 .login__rodape {
   margin-top: var(--espaco-4);
   text-align: center;
@@ -108,8 +56,7 @@
   text-decoration: underline;
 }
 
-/* Customização para Celular */
-
+/* Design de Celular */
 @media (max-width: 480px) {
   .login {
     padding: var(--espaco-2);

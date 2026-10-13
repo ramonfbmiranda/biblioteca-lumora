@@ -1,0 +1,17 @@
+.botao {
+  padding: 0.85rem 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: var(--cor-primaria);
+  border: none;
+  border-radius: var(--raio-pequeno);
+  transition: background-color var(--transicao), transform var(--transicao);
+}
+
+.botao:hover {
+  background-color: var(--cor-primaria-hover);
+}
+
+.botao:active {
+  transform: translateY(1px);
+}

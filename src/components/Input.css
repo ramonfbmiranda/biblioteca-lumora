@@ -1,0 +1,31 @@
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-2);
+}
+
+.campo label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.campo input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-pequeno);
+  transition: border-color var(--transicao), box-shadow var(--transicao);
+}
+
+.campo input::placeholder {
+  color: var(--cor-texto-suave);
+  opacity: 0.8;
+}
+
+.campo input:focus-visible {
+  border-color: var(--cor-foco);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--cor-foco) 25%, transparent);
+  outline: 2px solid transparent;
+}
