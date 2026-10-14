@@ -1,5 +1,6 @@
 import Input from "../components/Input";
 import Button from "../components/Button";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./Login.css";
 
@@ -45,7 +46,7 @@ function handleChange(e) {
 
 
         <p className="login__rodape">
-          Ainda não tem conta? <a href="/cadastro">Crie agora!</a>
+          Ainda não tem conta? <Link to="/cadastro">Crie agora!</Link>
         </p>
       </section>
     </main>
