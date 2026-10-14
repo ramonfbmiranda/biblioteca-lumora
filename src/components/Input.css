@@ -29,3 +29,11 @@
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--cor-foco) 25%, transparent);
   outline: 2px solid transparent;
 }
+.campo input[aria-invalid="true"] {
+  border-color: var(--cor-erro);
+}
+
+.campo__erro {
+  font-size: 0.85rem;
+  color: var(--cor-erro);
+}
