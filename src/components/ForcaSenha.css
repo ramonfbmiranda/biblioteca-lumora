@@ -1,0 +1,39 @@
+.forca {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-1);
+  --cor-nivel: var(--cor-erro);
+}
+
+/* O data-nivel do JSX decide a cor: só uma variável muda */
+.forca[data-nivel="2"] {
+  --cor-nivel: #c77d0a;
+}
+.forca[data-nivel="3"] {
+  --cor-nivel: var(--cor-foco);
+}
+.forca[data-nivel="4"] {
+  --cor-nivel: var(--cor-sucesso);
+}
+
+.forca__barras {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--espaco-1);
+}
+
+.forca__barra {
+  height: 0.3rem;
+  border-radius: 999px;
+  background-color: var(--cor-borda);
+  transition: background-color var(--transicao);
+}
+
+.forca__barra--ativa {
+  background-color: var(--cor-nivel);
+}
+
+.forca__texto {
+  font-size: 0.85rem;
+  color: var(--cor-texto-suave);
+}

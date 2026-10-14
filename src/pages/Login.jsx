@@ -1,5 +1,6 @@
 import Input from "../components/Input";
 import Button from "../components/Button";
+import Cabecalho from "../components/Cabecalho";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./Login.css";
@@ -17,7 +18,7 @@ function handleChange(e) {
   return (
     <main className="login">
       <section className="login__card">
-        <h1 className="login__titulo">Biblioteca Lumora</h1>
+        <Cabecalho titulo="Biblioteca Lumora" />
         <p className="login__subtitulo">Acesse sua estante!</p>
 
         <form className="login__form">

@@ -1,0 +1,80 @@
+.cadastro {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: var(--espaco-3);
+}
+
+.cadastro__card {
+  width: 100%;
+  max-width: 26rem;
+  padding: var(--espaco-5);
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra-card);
+}
+
+.cadastro__titulo {
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.cadastro__subtitulo {
+  margin-top: var(--espaco-2);
+  margin-bottom: var(--espaco-5);
+  text-align: center;
+  color: var(--cor-texto-suave);
+}
+
+.cadastro__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-4);
+}
+
+/* Senha + medidor ficam juntinhos, com espaço menor entre eles */
+.cadastro__grupo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-2);
+}
+
+.cadastro__mostrar {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-2);
+  font-size: 0.9rem;
+  color: var(--cor-texto-suave);
+  cursor: pointer;
+}
+
+.cadastro__rodape {
+  margin-top: var(--espaco-4);
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--cor-texto-suave);
+}
+
+.cadastro__rodape a {
+  font-weight: 500;
+}
+
+.cadastro__rodape a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .cadastro {
+    padding: var(--espaco-2);
+  }
+
+  .cadastro__card {
+    padding: var(--espaco-4);
+  }
+
+  .cadastro__titulo {
+    font-size: 1.5rem;
+  }
+}

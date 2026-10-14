@@ -1,0 +1,30 @@
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--espaco-3);
+}
+
+.cabecalho__logo {
+  height: 2.75rem;
+  width: auto;
+}
+
+.cabecalho__titulo {
+  font-size: 1.75rem;
+}
+
+@media (max-width: 480px) {
+  .cabecalho {
+    gap: var(--espaco-2);
+  }
+
+  .cabecalho__logo {
+    height: 2.25rem;
+  }
+
+  .cabecalho__titulo {
+    font-size: 1.5rem;
+  }
+}
