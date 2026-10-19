@@ -82,6 +82,7 @@
   gap: var(--espaco-2);
   margin-top: auto; /* Empurra o rodapé para o final do card */
   padding-top: var(--espaco-2);
+  flex-wrap: wrap; /* Permite que os elementos do rodapé se ajustem em telas menores */
 }
 
 .livro-card__genero {
