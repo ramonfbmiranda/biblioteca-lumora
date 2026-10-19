@@ -1,0 +1,99 @@
+.livro-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-3);
+  padding: var(--espaco-3);
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  transition: box-shadow var(--transicao), transform var(--transicao);
+}
+
+.livro-card:hover {
+  box-shadow: var(--sombra-card);
+  transform: translateY(-3px);
+}
+
+/* Formatação de capa genérica */
+
+.livro-card__capa {
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 2 / 3;
+  border-radius: var(--raio-pequeno);
+  background-color: var(--cor-primaria); /* plano B, caso o gradiente falhar */
+  background: linear-gradient(
+    160deg,
+    hsl(var(--capa-h) 70% 48%),
+    hsl(calc(var(--capa-h) + 15) 65% 28%)
+  );
+  box-shadow: inset 6px 0 0 rgba(255, 255, 255, 0.18); /* "lombada" */
+}
+
+.livro-card__inicial {
+  font-family: var(--fonte-titulo);
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.livro-card__selo {
+  position: absolute;
+  top: var(--espaco-2);
+  right: var(--espaco-2);
+  padding: 0.15rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--cor-primaria);
+  background-color: var(--cor-superficie);
+  border-radius: 999px;
+}
+
+/* Informações do livro */
+
+.livro-card__corpo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-1);
+  flex: 1;
+}
+
+.livro-card__titulo {
+  font-size: 1.05rem;
+  min-height: 2.5em; /* 2 linhas (line-height 1.25 x 2): Cards com a mesma altura */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+}
+
+.livro-card__autor {
+  font-size: 0.9rem;
+  color: var(--cor-texto-suave);
+}
+
+.livro-card__rodape {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--espaco-2);
+  margin-top: auto; /* Empurra o rodapé para o final do card */
+  padding-top: var(--espaco-2);
+}
+
+.livro-card__genero {
+  padding: 0.2rem 0.6rem;
+  font-size: 0.8rem;
+  color: var(--cor-primaria);
+  background-color: var(--cor-primaria-suave);
+  border-radius: 999px;
+}
+
+.livro-card__nota {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--cor-primaria);
+}

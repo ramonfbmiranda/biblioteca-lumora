@@ -3,9 +3,9 @@ import "./LivroCard.css";
 
 function LivroCard({ livro }) {
 
-  // Cada livro ganha um tom de azul próprio, calculado a partir do id
+  // Tom de azul por livro
   
-  const matiz = 200 + ((livro.id * 37) % 40);
+  const matiz = 200 + ((livro.id * 38) % 40);
 
   const genero = categorias.find((categoria) => categoria.id === livro.genero);
 
