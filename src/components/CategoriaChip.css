@@ -1,0 +1,31 @@
+.categoria-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--espaco-2);
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  white-space: nowrap; /* não quebra linha: bom para fileiras roláveis */
+  color: var(--cor-primaria);
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: 999px;
+  transition: background-color var(--transicao), color var(--transicao),
+    border-color var(--transicao);
+}
+
+.categoria-chip:hover {
+  background-color: var(--cor-primaria-suave);
+  border-color: var(--cor-primaria);
+}
+
+.categoria-chip--ativa {
+  color: #ffffff;
+  background-color: var(--cor-primaria);
+  border-color: var(--cor-primaria);
+}
+
+.categoria-chip--ativa:hover {
+  background-color: var(--cor-primaria-hover);
+  border-color: var(--cor-primaria-hover);
+}
