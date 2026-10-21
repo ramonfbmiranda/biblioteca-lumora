@@ -4,6 +4,7 @@ import Input from "../components/Input";
 import Button from "../components/Button";
 import Cabecalho from "../components/Cabecalho";
 import ForcaSenha from "../components/ForcaSenha";
+import SeletorGeneros from "../components/SeletorGeneros";
 import "./Cadastro.css";
 
 function Cadastro() {
@@ -13,14 +14,19 @@ function Cadastro() {
     senha: "",
     confirmarSenha: "",
   });
+
+  // Constantes de componentização
+
   const [erros, setErros] = useState({});
   const [mostrarSenha, setMostrarSenha] = useState(false);
+  const [generos, setGeneros] = useState([]);
 
   function handleChange(e) {
     const { name, value } = e.target;
     setDados({ ...dados, [name]: value });
 
-    // Quando a pessoa volta a digitar, some o erro daquele campo
+// Recurso para quando a pessoa volta a digitar, some o erro daquele campo
+
     if (erros[name]) setErros({ ...erros, [name]: "" });
   }
 
@@ -51,7 +57,11 @@ function Cadastro() {
     if (Object.keys(novosErros).length > 0) return;
 
     // Por enquanto só no console; no futuro isso vai para o back-end
-    console.log("Cadastro válido:", { nome: dados.nome, email: dados.email });
+    console.log("Cadastro válido:", {
+    nome: dados.nome,
+    email: dados.email,
+    generos,
+});
   }
 
   const tipoSenha = mostrarSenha ? "text" : "password";
@@ -117,6 +127,8 @@ function Cadastro() {
             />
             Mostrar senhas
           </label>
+
+          <SeletorGeneros valor={generos} onChange={setGeneros} />
 
           <Button type="submit">Criar conta</Button>
         </form>
