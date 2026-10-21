@@ -1,0 +1,47 @@
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--espaco-2);
+  padding: 0.4rem 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--cor-chip);
+  background-color: var(--cor-superficie);
+  border: 1.5px solid var(--cor-chip);
+  border-radius: 999px;
+  transition: background-color var(--transicao), color var(--transicao),
+    transform var(--transicao), opacity var(--transicao);
+}
+
+.chip:hover:not(:disabled) {
+  background-color: color-mix(in srgb, var(--cor-chip) 10%, white);
+}
+
+.chip:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.chip--ativo {
+  color: #ffffff;
+  background-color: var(--cor-chip);
+}
+
+/* Precisa vir depois do hover acima, mesma especificidade, vence o último */
+
+.chip--ativo:hover:not(:disabled) {
+  background-color: var(--cor-chip);
+}
+
+.chip:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.chip__selo {
+  padding: 0 0.4rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--cor-chip);
+  background-color: #ffffff;
+  border-radius: 999px;
+}
