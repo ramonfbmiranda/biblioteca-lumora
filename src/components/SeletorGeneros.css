@@ -1,0 +1,50 @@
+.generos {
+  min-width: 0;
+  padding: 0;
+  border: 0;
+}
+
+.generos__titulo {
+  padding: 0;
+  margin-bottom: var(--espaco-1);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.generos__ajuda {
+  margin-bottom: var(--espaco-3);
+  font-size: 0.85rem;
+  color: var(--cor-texto-suave);
+}
+
+.generos__lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaco-2);
+}
+
+.generos__rodape {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--espaco-3);
+  font-size: 0.85rem;
+  color: var(--cor-texto-suave);
+}
+
+.generos__surpresa {
+  padding: 0;
+  font-weight: 500;
+  color: var(--cor-primaria);
+  background: none;
+  border: none;
+}
+
+.generos__surpresa:hover:not(:disabled) {
+  text-decoration: underline;
+}
+
+.generos__surpresa:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
