@@ -1,12 +1,36 @@
 # 📚 [Biblioteca Virtual]
 
-Aplicação web de biblioteca para consulta de livros, desenvolvida com **React** com objetivo inicial de projeto de estudo.
+Aplicação web de biblioteca para consulta de livros, desenvolvida com **React** com objetivo inicial de projeto de estudo, seguindo um mockup prévio do Figma.
 
-## 📌 Sobre o projeto
+## 📌 SOBRE O PROJETO
 
-Esta biblioteca permite gerenciar uma coleção de livros de forma simples: adicionar  títulos, buscar, editar informações e acompanhar o que já foi lido.
+# OBJETIVO 
 
-O objetivo principal é praticar os fundamentos do React na construção de uma aplicação completa, do zero até um CRUD funcional.
+Desenvolvimento de um site para Theka, uma biblioteca moderna e acessível, com uma estética animada, colorida e
+descontraída, voltado principalmente para jovens,
+estudantes e leitores curiosos. O site deve promover o
+acesso ao acervo da biblioteca, contar a história da
+instituição e oferecer um canal de comunicação prático e
+acolhedor.
+
+# IDENTIDADE VISUAL
+
+Estilo visual: Ilustrações vetoriais, elementos com
+movimento suave (scroll animado, hover, transições),
+personagens caricatos ou ícones expressivos.
+Paleta de cores: Cores vibrantes e contrastantes, como
+roxo, lilás e verde. Aplicações em blocos coloridos, com
+fundos suaves e detalhes vivos.
+Tipografia: Fonte sans-serif amigável e moderna (ex:
+Poppins, Nunito, Quicksand, Raleway). Uso de variações
+de peso para hierarquia.
+Tom da comunicação: Alegre, acessível, próximo e
+motivador. Textos leves, frases curtas e empáticas.
+PÚBLICO-ALVO
+Jovens estudantes (15 a 25 anos);
+Educadores e pesquisadores;
+⚫ Leitores casuais que buscam descobrir novos livros de
+forma lúdica..
 
 ## ✨ Funcionalidades
 
@@ -39,7 +63,7 @@ O objetivo principal é praticar os fundamentos do React na construção de uma 
 - [ ] [Escrever testes]
 - [ ] [Melhorar responsividade]
 
-## 👤 Autor
+## 👤 Autor do Código:
 
 **Ramon Miranda**
 
